@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="bg-[#d6efd6]">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        
+
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-3">
           <Image
@@ -25,13 +25,13 @@ export default function Header() {
           <Link href="/" className="hover:text-green-700 transition">
             Home
           </Link>
-          <Link href="/services" className="hover:text-green-700 transition">
+          <Link href="/#services" className="hover:text-green-700 transition">
             Services
           </Link>
           <Link href="/about" className="hover:text-green-700 transition">
             About Us
           </Link>
-          <Link href="/locations" className="hover:text-green-700 transition">
+          <Link href="/network" className="hover:text-green-700 transition">
             Our Locations
           </Link>
           <Link href="/contact" className="hover:text-green-700 transition">

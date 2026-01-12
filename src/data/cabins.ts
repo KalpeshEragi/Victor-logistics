@@ -1,0 +1,241 @@
+export interface Cabin {
+    id: string;
+    name: string;
+    price: number;
+    priceUnit: string;
+    material: string;
+    builtType: string;
+    usage: string;
+    feature: string;
+    shape: string;
+    size: string;
+    color: string;
+    origin: string;
+    description: string;
+    deliveryTime: string;
+    image: string;
+}
+
+export const cabins: Cabin[] = [
+    {
+        id: "site-office-40ft-gi",
+        name: "Portable Site Office Cabin",
+        price: 1000000,
+        priceUnit: "Piece",
+        material: "GI",
+        builtType: "Prefab",
+        usage: "Office",
+        feature: "Eco Friendly",
+        shape: "Rectangular",
+        size: "40x10x8.6 feet",
+        color: "White",
+        origin: "Made in India",
+        description: "Premium portable site office cabin. Available in 20x10x8.6 feet and 40x10x8.6 feet sizes. Perfect for construction sites and temporary offices.",
+        deliveryTime: "7-10 days",
+        image: "/images/cabins/site-office-40ft.png"
+    },
+    {
+        id: "office-cabin-40ft-ms",
+        name: "Portable Office Cabin 40ft",
+        price: 315000,
+        priceUnit: "Piece",
+        material: "Mild Steel",
+        builtType: "Prefab",
+        usage: "Office",
+        feature: "Eco Friendly",
+        shape: "Rectangular",
+        size: "40x8x8.6 feet",
+        color: "White",
+        origin: "Made in India",
+        description: "40ft portable office cabin made from mild steel. Easy to move and relocate. Ideal for office use.",
+        deliveryTime: "7-10 days",
+        image: "/images/cabins/office-40ft-ms.png"
+    },
+    {
+        id: "site-office-20ft-gi",
+        name: "Portable Site Office 20ft",
+        price: 182000,
+        priceUnit: "Piece",
+        material: "GI",
+        builtType: "Prefab",
+        usage: "Office",
+        feature: "Eco Friendly",
+        shape: "Rectangular",
+        size: "20x10x8.6 feet",
+        color: "White",
+        origin: "Made in India",
+        description: "Compact 20ft GI portable site office cabin. Easy to move. Perfect for smaller sites and temporary setups.",
+        deliveryTime: "7-10 days",
+        image: "/images/cabins/site-office-20ft.png"
+    },
+    {
+        id: "office-cabin-pvc-20ft",
+        name: "PVC Portable Office Cabin",
+        price: 360000,
+        priceUnit: "Piece",
+        material: "PVC Panel",
+        builtType: "Prefab",
+        usage: "Office",
+        feature: "Beautiful Looks",
+        shape: "Rectangular",
+        size: "20x10x8.6 feet",
+        color: "White",
+        origin: "Made in India",
+        description: "Beautiful PVC panel office cabin with premium finish. Modern aesthetics with durability.",
+        deliveryTime: "10-15 days",
+        image: "/images/cabins/office-pvc-20ft.png"
+    },
+    {
+        id: "security-cabin-frp",
+        name: "FRP Portable Security Cabin",
+        price: 37000,
+        priceUnit: "Piece",
+        material: "FRP",
+        builtType: "Prefab",
+        usage: "Guard Room",
+        feature: "Easily Assembled",
+        shape: "Square",
+        size: "4x4x7 feet",
+        color: "White",
+        origin: "Made in India",
+        description: "FRP Portable Security Cabin, extremely praised in the market. Lightweight and durable.",
+        deliveryTime: "5 days",
+        image: "/images/cabins/security-frp.png"
+    },
+    {
+        id: "security-cabin-gi",
+        name: "GI Portable Security Cabin",
+        price: 48000,
+        priceUnit: "Piece",
+        material: "Steel (GI)",
+        builtType: "Prefab",
+        usage: "Security",
+        feature: "Eco Friendly",
+        shape: "Square",
+        size: "4x4x8.6 feet",
+        color: "White",
+        origin: "Made in India",
+        description: "GI Portable Security Cabin, extremely praised in the market. Sturdy steel construction.",
+        deliveryTime: "7 days",
+        image: "/images/cabins/security-gi.png"
+    },
+    {
+        id: "security-cabin-6ft",
+        name: "Portable Security Cabin 6ft",
+        price: 68000,
+        priceUnit: "Piece",
+        material: "Steel",
+        builtType: "Prefab",
+        usage: "Office/Security",
+        feature: "Eco Friendly",
+        shape: "Rectangular",
+        size: "6x6x8.6 feet",
+        color: "Gray",
+        origin: "Made in India",
+        description: "Portable security cabin 6x6x8.6 feet. Comfortable for society and offices. Easy to move and carry.",
+        deliveryTime: "7 days",
+        image: "/images/cabins/security-6ft.png"
+    },
+    {
+        id: "eco-cabin-pvc-20ft",
+        name: "Eco Friendly Portable Cabin",
+        price: 310000,
+        priceUnit: "Piece",
+        material: "PVC",
+        builtType: "Prefab",
+        usage: "Office",
+        feature: "Eco Friendly",
+        shape: "Rectangular",
+        size: "20x8x8.6 feet",
+        color: "Gray",
+        origin: "Made in India",
+        description: "PVC office cabin with good finish. Eco-friendly and modern design.",
+        deliveryTime: "10-15 days",
+        image: "/images/cabins/eco-pvc-20ft.png"
+    },
+    {
+        id: "office-cabin-40x10-ms",
+        name: "Office Cabin 40x10ft",
+        price: 370000,
+        priceUnit: "Piece",
+        material: "Mild Steel",
+        builtType: "Prefab",
+        usage: "Office",
+        feature: "Eco Friendly",
+        shape: "Rectangular",
+        size: "40x10x8.6 feet",
+        color: "White",
+        origin: "Made in India",
+        description: "40x10x8.6 feet office cabin. Good and easy to move from one place to other.",
+        deliveryTime: "7-10 days",
+        image: "/images/cabins/office-40x10-ms.png"
+    },
+    {
+        id: "office-cabin-20ft-budget",
+        name: "Budget Office Cabin 20ft",
+        price: 155000,
+        priceUnit: "Piece",
+        material: "Mild Steel",
+        builtType: "Prefab",
+        usage: "Office",
+        feature: "Eco Friendly",
+        shape: "Rectangular",
+        size: "20x8x8.6 feet",
+        color: "White",
+        origin: "Made in India",
+        description: "Budget-friendly 20ft office cabin. Good for office use and movable.",
+        deliveryTime: "7-10 days",
+        image: "/images/cabins/office-20ft-budget.png"
+    },
+    {
+        id: "office-cabin-10ft",
+        name: "Compact Office Cabin 10ft",
+        price: 105000,
+        priceUnit: "Piece",
+        material: "GI",
+        builtType: "Prefab",
+        usage: "Office",
+        feature: "Eco Friendly",
+        shape: "Square",
+        size: "10x10x8.6 feet",
+        color: "White",
+        origin: "Made in India",
+        description: "Compact 10x10x8.6 feet office cabin. Easy to move. Perfect for small offices.",
+        deliveryTime: "7 days",
+        image: "/images/cabins/office-10ft.png"
+    },
+    {
+        id: "toilet-cabin-portable",
+        name: "Portable Toilet Cabin",
+        price: 125000,
+        priceUnit: "Piece",
+        material: "GI Sheet",
+        builtType: "Prefab",
+        usage: "Toilets",
+        feature: "2 Compartments",
+        shape: "Rectangular",
+        size: "10x8x8.6 feet",
+        color: "White",
+        origin: "Made in India",
+        description: "Portable toilet cabin with 10 WC for 2 people. Totally movable and can be installed anywhere.",
+        deliveryTime: "20 days",
+        image: "/images/cabins/toilet-cabin.png"
+    },
+    {
+        id: "ms-office-cabin-20ft",
+        name: "MS Office Portable Cabin",
+        price: 190000,
+        priceUnit: "Piece",
+        material: "GI",
+        builtType: "Prefab",
+        usage: "House/Office",
+        feature: "Eco Friendly",
+        shape: "Rectangular",
+        size: "20x10x8.6 feet",
+        color: "White",
+        origin: "Made in India",
+        description: "20x10x8.6 feet MS office cabin. Easy and good to use for both housing and office purposes.",
+        deliveryTime: "7-10 days",
+        image: "/images/cabins/ms-office-20ft.png"
+    }
+];

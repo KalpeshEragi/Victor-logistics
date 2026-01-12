@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import GetInTouch from "@/components/sections/GetInTouch";
+import { containers } from "@/data/containers";
 
 {/* 
   ========================================
@@ -124,31 +125,77 @@ export default function ContainerTradingPage() {
             </section>
 
             {/* ===================== */}
-            {/* CONTAINER TYPES */}
+            {/* AVAILABLE CONTAINERS - SLIDER */}
             {/* ===================== */}
             <section className="bg-[#f8faf8]">
-                <div className="max-w-6xl mx-auto px-6 py-20">
-                    <div className="text-center mb-14">
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-800">Container Types Available</h2>
+                <div className="max-w-7xl mx-auto px-6 py-20">
+                    <div className="text-center mb-12">
+                        <h2 className="text-2xl md:text-3xl font-bold text-gray-800">Containers For Sale</h2>
+                        <p className="mt-3 text-gray-600">Swipe or click to explore our available inventory</p>
                     </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
-                        {[
-                            { icon: "📦", name: "20ft Standard", size: "TEU" },
-                            { icon: "📦", name: "40ft Standard", size: "FEU" },
-                            { icon: "📦", name: "40ft High Cube", size: "9'6\" height" },
-                            { icon: "❄️", name: "Reefer", size: "Temperature controlled" },
-                            { icon: "📂", name: "Open Top", size: "Top loading" },
-                            { icon: "🔲", name: "Flat Rack", size: "Oversized cargo" },
-                            { icon: "🛢️", name: "Tank Container", size: "Liquid cargo" },
-                            { icon: "📦", name: "Side Open", size: "Side loading" },
-                        ].map((item, i) => (
-                            <div key={i} className="bg-white rounded-xl p-5 text-center border border-gray-100 hover:shadow-md transition-shadow">
-                                <div className="text-3xl mb-3">{item.icon}</div>
-                                <h3 className="font-semibold text-gray-800 mb-1">{item.name}</h3>
-                                <p className="text-sm text-gray-500">{item.size}</p>
+                    {/* Product Slider */}
+                    <div className="relative">
+                        <div className="overflow-x-auto pb-4 scrollbar-hide">
+                            <div className="flex gap-6" style={{ minWidth: 'max-content' }}>
+                                {containers.map((container) => (
+                                    <Link
+                                        key={container.id}
+                                        href={`/services/container-trading/${container.id}`}
+                                        className="w-72 flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 group"
+                                    >
+                                        {/* Image */}
+                                        <div className="relative h-44 bg-gradient-to-br from-gray-50 to-gray-100">
+                                            <Image
+                                                src={container.image}
+                                                alt={container.name}
+                                                fill
+                                                className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                                            />
+                                            <span className="absolute top-3 left-3 bg-green-600 text-white text-xs font-medium px-2 py-1 rounded-full">
+                                                {container.type}
+                                            </span>
+                                        </div>
+
+                                        {/* Content */}
+                                        <div className="p-5">
+                                            <h3 className="font-semibold text-gray-800 mb-1 group-hover:text-green-600 transition-colors">
+                                                {container.name}
+                                            </h3>
+                                            <p className="text-xs text-gray-500 mb-3">
+                                                {container.length} | {container.size}
+                                            </p>
+                                            <div className="flex items-baseline justify-between">
+                                                <div>
+                                                    <span className="text-xl font-bold text-green-600">
+                                                        ₹{container.price.toLocaleString("en-IN")}
+                                                    </span>
+                                                    <span className="text-xs text-gray-500">/{container.priceUnit}</span>
+                                                </div>
+                                                <span className="text-xs bg-green-50 text-green-700 px-2 py-1 rounded">
+                                                    🚚 Delivery in {container.deliveryTime}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                ))}
                             </div>
-                        ))}
+                        </div>
+
+                        {/* Scroll Hint */}
+                        <div className="flex justify-center mt-4 gap-2">
+                            <span className="text-xs text-gray-400">← Scroll to see more →</span>
+                        </div>
+                    </div>
+
+                    {/* View All CTA */}
+                    <div className="text-center mt-10">
+                        <Link
+                            href="/contact"
+                            className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-green-700 transition"
+                        >
+                            Request Custom Quote
+                        </Link>
                     </div>
                 </div>
             </section>
