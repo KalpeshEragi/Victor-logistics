@@ -19,7 +19,7 @@ export const containers: Container[] = [
     {
         id: "used-refrigerated-40ft",
         name: "Used Refrigerated Container",
-        price: 550000,
+        price: 650000,
         priceUnit: "Piece",
         length: "40 feet",
         material: "Aluminium Alloy",

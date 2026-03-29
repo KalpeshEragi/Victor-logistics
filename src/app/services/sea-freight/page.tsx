@@ -203,7 +203,7 @@ export default function SeaFreightPage() {
 
             <div className="text-center md:text-right">
               <p className="text-gray-600 mb-4 text-sm">
-                We serve Mumbai, Chennai, Delhi, Bengaluru, Hyderabad, Pune & more
+                We serve Mumbai, Chennai, Delhi, Mundra, Hyderabad, Pune & more
               </p>
               <Link
                 href="/contact"

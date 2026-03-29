@@ -10,14 +10,16 @@
   "dependencies": {
     "maplibre-gl": "^5.15.0",
     "mongodb": "^7.0.0",
-    "mongoose": "^9.1.2",
+    "mongoose": "^9.3.3",
     "next": "16.1.1",
+    "nodemailer": "^8.0.4",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/nodemailer": "^7.0.11",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "tailwindcss": "^4",

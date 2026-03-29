@@ -19,11 +19,7 @@ const faqs = [
     answer:
       "We serve clients across India and support international trade routes through our global logistics network.",
   },
-  {
-    question: "What are prefab and fabricated cabins used for?",
-    answer:
-      "They are commonly used for site offices, port operations, industrial yards, warehouses, and temporary infrastructure requirements.",
-  },
+  
 ];
 
 export default function FAQ() {

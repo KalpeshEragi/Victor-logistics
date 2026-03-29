@@ -62,7 +62,13 @@ export default function GetInTouch() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 font-medium">Call Us</p>
-                  <p className="text-gray-800 font-semibold">+91 22 1234 5678</p>
+                  <a href="tel:+918108834666" className="text-gray-800 font-semibold">
+                    +91 8108834666
+                  </a>
+                  <br />
+                  <a href="tel:+918885087666" className="text-gray-800 font-semibold">
+                    +91 8885087666
+                  </a>
                 </div>
               </div>
             </div>
@@ -75,7 +81,12 @@ export default function GetInTouch() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 font-medium">Email Us</p>
-                  <p className="text-gray-800 font-semibold">info@victorlogistics.com</p>
+                  <a
+                    href="mailto:cs.mum@victorexpressline.com"
+                    className="text-gray-800 font-semibold"
+                  >
+                    cs.mum@victorexpressline.com
+                  </a>
                 </div>
               </div>
             </div>

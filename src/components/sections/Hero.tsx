@@ -22,7 +22,7 @@ export default function Hero() {
             <span className="font-semibold text-green-700">
               Victor & Co.
             </span>{" "}
-            is a trusted logistics and infrastructure solutions provider
+            is a trusted shipping and logistics solutions provider
             offering reliable sea freight (NVOCC), customs clearance,
             container trading, and modular cabin solutions across India and
             global trade routes.
@@ -30,7 +30,7 @@ export default function Hero() {
 
           <p className="mt-4 text-gray-600 max-w-xl">
             Serving India and international markets with proven expertise in
-            shipping, container logistics, and site infrastructure solutions.
+            shipping, container logistics solutions.
           </p>
 
           <Link
