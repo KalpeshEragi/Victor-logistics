@@ -11,7 +11,7 @@ export const branches = [
     city: "Hyderabad",
     lat: 17.385,
     lng: 78.4867,
-    address: "Plot No. 13, 2nd Floor, Chandulal Bowli, Secunderabad – 500009",
+    address: "Building No. 276 & 287, Rama Krishna Nagar, Medipally, Hyderabad, Medchal Malkajgiri, Telangana – 500039",
     phone: "040-27893670 / 9290760519",
     email: "hyd@victorexpressline.com"
   },
@@ -19,7 +19,7 @@ export const branches = [
     city: "Visakhapatnam",
     lat: 17.6868,
     lng: 83.2185,
-    address: "Flat No. 403, Venu Regency Plaza, Waltair Main Road, Ramnagar, Visakhapatnam – 530002",
+    address: "VICTOREXPRESS LINE, G-3, Sarada Towers, Facor Layout, RamNagar, Visakhapatnam, andhrapradesh, 530002.",
     phone: "0891-2576766",
     email: "satish@victorexpress.com"
   },
@@ -27,7 +27,7 @@ export const branches = [
     city: "Singapore",
     lat: 1.3521,
     lng: 103.8198,
-    address: "105 Cecil Street, #22-20 The Octagon, Singapore – 069534",
+    address: "Victor Express Line Pte Ltd, #05-03 Pioneer Junction, 3 Soon Lee Street, Singapore 627606",
     phone: "+65 8506 5582",
     email: "raju@victorexpress.com"
   }
